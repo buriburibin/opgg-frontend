@@ -153,7 +153,8 @@ function Header(prop) {
     return (
       <div className="l-menu">
           <ul className="menu">
-              <div className="gnb-list-item gnb-list-item__search" style={{marginLeft: 'auto'}}>
+                <h1 className="opgg-header__logo"><a className="opgg-header__logo-anchor" href="/"><img alt="OP.GG" height="16" src="//opgg-static.akamaized.net/images/gnb/svg/00-opgglogo.svg" width="65"/></a></h1>
+                <div className="gnb-list-item gnb-list-item__search" style={{marginLeft: 'auto'}}>
                     <input type="text" onKeyPress={searchEnter} onChange={typingName} onBlur={closeHistory} onFocus={openHistory} value={searchName} className="gnb-list-item__input _suggest" name="userName" placeholder="소환사명, 소환사명, ..." autoComplete="off"/>
                     <img height="14" style={{ marginTop : '8px',marginRight : '8px' }} onClick={search} src="//opgg-static.akamaized.net/images/gnb/svg/00-icon-gg.svg" alt=""/>
                     <div className="summoner-search-history gnb-summoner-search-history" style={{display: displayVal[0]}}>
